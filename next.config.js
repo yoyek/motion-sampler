@@ -1,7 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
+  reactStrictMode: true,
+  output: 'standalone',
+  images: {
+    remotePatterns: [
+      '*.ytimg.com', // Youtube
+      '*.jtvnw.net', // Twitch
+      '*.vimeocdn.com', // Vimeo
+      '*.sndcdn.com', // SoundCloud
+      '*.fbcdn.net', // Facebook
+      '*.dmcdn.net', // Dailymotion
+      '*.mixcloud.com', // Mixcloud
+    ].map(hostname => ({
+      hostname,
+      protocol: 'https',
+      port: '',
+    }))
   },
 }
 

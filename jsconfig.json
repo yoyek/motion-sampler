@@ -4,5 +4,18 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "exclude": [
+    ".git",
+    ".app-cache",
+    ".npm",
+    ".npm-tmp",
+    "local",
+    "dist",
+    "cache",
+    "dist*",
+    "node_modules",
+    "**/dist/*",
+    "**/node_modules/*"
+  ]
 }
