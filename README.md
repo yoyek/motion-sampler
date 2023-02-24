@@ -20,5 +20,6 @@ $ yarn start
 ```
 
 ### Notes
+- Supported sites: Youtube, Twitch, SoundCloud, Mixcloud, Facebook, Vimeo and Dailymotion
 - Videos are downloaded in best quality to /storage/source folder
 - All data is stored in localstorage, backend loads and cuts videos only
